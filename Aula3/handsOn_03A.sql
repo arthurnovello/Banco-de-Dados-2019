@@ -1,0 +1,17 @@
+CREATE TABLE tabaluno(idAluno INTEGER, nome VARCHAR(20), endereco VARCHAR(30));
+DESCRIBE tabaluno;
+INSERT INTO tabaluno VALUES(1, 'Paulo Marcos', 'Av. Brasil, 120 - RJ');
+INSERT INTO tabaluno VALUES(7, 'Ana de Souza', 'Rua Marcos Silvam, 70 - SP');
+SELECT * FROM tabaluno;
+SELECT idAluno, nome FROM tabaluno ORDER BY nome;
+DELETE FROM tabaluno WHERE idAluno = 1;
+SELECT * FROM tabaluno;
+DELETE FROM tabaluno;
+SELECT * FROM tabaluno;
+INSERT INTO tabaluno VALUES(1, 'Paulo Marcos', 'Av. Brasil, 120 - RJ');
+INSERT INTO tabaluno VALUES(7, 'Ana de Souza', 'Rua Marcos Silvam, 70 - SP');
+INSERT INTO tabaluno VALUES(20, 'Tadeu Antunes', 'Rua Luiz de Souza, 70 - RJ');
+INSERT INTO tabaluno VALUES(5, 'Pedro Xavier', 'Rua Amazonas, 45 - SP');
+INSERT INTO tabaluno VALUES(45, 'Paula Andressa', 'Rua Catanduva, 345 - SP');
+SELECT * FROM tabaluno;
+DROP TABLE tabaluno;
